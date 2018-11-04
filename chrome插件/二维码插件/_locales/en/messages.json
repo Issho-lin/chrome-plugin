@@ -1,0 +1,26 @@
+{
+   "close": {
+      "message": "Close"
+   },
+   "copied": {
+      "message": "Copied"
+   },
+   "copy": {
+      "message": "Copy"
+   },
+   "decode": {
+      "message": "Decode this qrcode"
+   },
+   "desc": {
+      "message": "Anything to QRcode ( absolute locally and offline, no ads ) : the url of current page, any text/image/link in the page, etc."
+   },
+   "generate": {
+      "message": "Generate QRcode"
+   },
+   "pageActionTitle": {
+      "message": "click to show the QRcode of "
+   },
+   "save": {
+      "message": "save"
+   }
+}

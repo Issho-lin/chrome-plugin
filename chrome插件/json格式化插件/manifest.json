@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "js": [ "static/js/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "zh_CN",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "static/images/icons/icon-128.png",
+      "16": "static/images/icons/icon-16.png",
+      "48": "static/images/icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApWoybuSLPId715ztG5HUSS4GjgvOgSI6Jtdx8odxKhJeUeZh79i/FVLe+eL58mCjBB+0YKflU7/kUCcaycBFafOQmd8IJ3vQUo89tDOaGcrQsgxR8UNsRh+dAs3dB4hSe00mAyZf/bsyy2ndHpkSgz6pskVTUscYWaLGjKf8c2AGTVXdlKeLiOe/Vb/Qw57tbXF/o+YGwF/J4r1YLfY7ihzJoIINz9M0QcL1SQDCDub4FRV7r3PV0jkW66HH+VkiE7Pcc0jvD7ltYifzoBbwVfEna/8TUEgR3k/W3TXm5xw8grfuo6LVkmt3JRFaWE6C1a0BwMrBXsLJe21v7foEKwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ext_name__",
+   "offline_enabled": true,
+   "permissions": [ "webRequest", "webRequestBlocking", "clipboardWrite", "tabs", "http://*/", "https://*/", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.1",
+   "web_accessible_resources": [ "static/css/json.css", "static/lib/zepto.min.js", "static/js/app.js" ]
+}

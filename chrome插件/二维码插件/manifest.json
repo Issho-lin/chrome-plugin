@@ -1,0 +1,36 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "lib/zxing.min.js", "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "css/content.css" ],
+      "js": [ "lib/jquery.min.js", "lib/jquery.qrcode.min.js", "lib/toutf8.js", "lib/clipboard.min.js", "js/cs.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "48": "icon/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApFwAci4cY62luZaBIwc1JgTJeeRdjKrP6cG6paJCYjOkoPAZvf4Tsqz3GyH5ynXAiKDAHC/kKGPYEwnmdW+xz3Hgb1qSk1eMTideTY8nwOqY/qKOYAXGPsmx6V/UdKtsQfMblaFGHOEIYa8EVqd+cGnf8tidBkN2jgfxSsB5EV/115lCljwRJYxGMDOK7zOSeaHRK0ud772aQedNtDenwovZDMBDQapScGL0fZ47LjIfSZta0n/KwbHLEpGfUfWnrvu0555QzTG3PrdwHSOpm5YoeY8Jb7Ct68ZRJ5fVCmJyDrVx4qr4O1Xx6m1BxeEcQ+yXMw21P90MlISS4tCP/QIDAQAB",
+   "manifest_version": 2,
+   "name": "Anything to QRcode",
+   "offline_enabled": true,
+   "page_action": {
+      "default_icon": {
+         "19": "icon/19.png",
+         "38": "icon/38.png"
+      },
+      "default_popup": "pageaction.html",
+      "default_title": "Anything to QRcode"
+   },
+   "permissions": [ "tabs", "contextMenus", "http://*/*", "https://*/*", "storage", "unlimitedStorage", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.2",
+   "web_accessible_resources": [ "res/*" ]
+}

@@ -1,0 +1,9 @@
+{
+	"ext_name": {
+		"message": "jsonView jsonViewer json formatter 格式化"
+	},
+	"ext_description":{
+		"message":"格式化、着色、美观、易读... jsonView处理了其他该类插件中文字符的bug,支持 json 和 jsonp 格式"
+	}
+
+}
